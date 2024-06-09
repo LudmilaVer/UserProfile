@@ -13,6 +13,7 @@ const UserProfile = () => {
 
   const fetchUser = async () => {
     try {
+      setLoading(true);
       const response = await axios.get('https://randomuser.me/api/');
       setUser(response.data.results[0]);
     } catch (error) {
@@ -42,10 +43,10 @@ const UserProfile = () => {
       ) : (
         user && (
           <div className={styles.userInfo}>
+            <img src={user.picture.large} alt={`${user.name.first} ${user.name.last}`} />
             <h2>{user.name.first} {user.name.last}</h2>
             <p>Email: {user.email}</p>
             <p>Phone: {user.phone}</p>
-            <img src={user.picture.large} alt={`${user.name.first} ${user.name.last}`} />
             <button onClick={fetchUser}>Load New User</button>
             <button onClick={handleColorChange}>Change Background Color</button>
           </div>

@@ -1,3 +1,12 @@
+body {
+  background-color: #f8f9fa;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .userProfile {
   padding: 20px;
   border-radius: 10px;
@@ -6,8 +15,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh; /* Обеспечиваем, чтобы элемент занимал всю высоту экрана */
-  background-color: #f8f9fa;
+  background-color: #ffffff; /* начальный цвет фона */
+  transition: background-color 0.3s;
+  border: 2px solid #ddd; /* рамка */
 }
 
 .userInfo {
