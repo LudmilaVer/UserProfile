@@ -1,0 +1,51 @@
+.userProfile {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Обеспечиваем, чтобы элемент занимал всю высоту экрана */
+  background-color: #f8f9fa;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.userInfo img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.userInfo h2 {
+  margin: 10px 0;
+}
+
+.userInfo p {
+  margin: 5px 0;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #2575fc, #6a11cb);
+}
+
+button:active {
+  transform: scale(0.95);
+}
